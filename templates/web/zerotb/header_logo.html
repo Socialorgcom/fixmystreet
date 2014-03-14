@@ -1,0 +1,8 @@
+                [% IF c.req.uri.path == '/' %]
+                <div id="site-logo">
+                <p><a href="/">[% loc('<span class="orange">Report</span> Delhi TB drug <b>stockouts</b>') %]</a></p>
+                <p id="brought-to-you">Brought to you by <a href="http://www.fixmystreet.org" id="fms-logo-small">FixMyStreet</a></p>
+                </div>
+                [% ELSE %]
+                    <a href="/" id="site-logo">[% c.cobrand.site_title | html %]</a>
+                [% END %]
